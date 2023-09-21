@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f1de9ba23f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <h1 class="heading"><span class="extra">SHOEX<p class="head">SHOE SHOP</p></span></h1>
+                <br>
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#benifits">Overview</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="home-col-2">
+                <h4 style="color: #ff004f; background-color: transparent;"> STYLE WITH SHOEX</h4>
+                <h1><span>FIND BEST SHOES FOR YOU!</span></h1>
+                <h3>Explore the world of comfort ans style here!
+                    <br>
+                    buy Quality footware for evry occasion with
+                    affordable price. Unleash your inner fashionista......!!!
+                </h3>
+                <button class="btn" onclick="window.location.href = '#contact';">
+                    <b>Shop Now</b>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-----------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-3">
+                    <img class="about_image" src="user1.png">
+                </div>
+                <div class="about-col-4">
+                    <h1 class="heading"><span class="extra">SHOEX</span><br>
+                        <h5 class="heading">- Where Every Step Tells a Story -</h5>
+                    </h1>
+                    <br>
+                    <p class="About">At SHOEX, we are on a mission to provide footwear that not only looks good but also
+                        feels good. We value quality, sustainability, and customer satisfaction above all else. and
+                        Each pair of shoes we offer is a testament to our dedication to both style and the
+                        environment. Our specialty lies in crafting sustainable sneakers that combine eco-friendly
+                        materials with timeless design. We believe in offering not just shoes, but a lifestyle
+                        choice.We're constantly listening to your feedback to improve our products and services,
+                        ensuring you have the best shopping experience. and we're driven by a shared love for quality
+                        footwear.We invite you to explore our collection and take your first step toward a more stylish
+                        and comfortable future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------service----------------------->
+    <div id="service">
+        <div class="container">
+            <h1 class="sub-title-2">We <span class="extra">Provide</span></h1>
+            <div class="service-list">
+                <div class="section">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3><b>Mens Footwear</b></h3>
+                        <br>
+                        <p>Elevate your formal look with these Classic Leather Men's Dress Shoes. Crafted with premium
+                            leather for durability and a timeless appearance, these shoes feature cushioned insoles for
+                            all-day comfort. Whether you're heading to the office or a special event, these shoes will
+                            add a touch of sophistication to your outfit.</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3><b>Womens Footwear</b></h3>
+                        <br>
+                        <p>Step out in style with these Elegant Heeled Ankle Boots for Women. Crafted with soft suede
+                            and featuring a comfortable, stable heel, these boots are perfect for both casual and formal
+                            occasions. With their elegant design and supportive fit, you'll feel confident and
+                            fashionable all day long.</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3><b>Kids Footwear</b></h3>
+                        <br>
+                        <p>Give your active kids the support they need with these Lightweight Sneakers. Designed for
+                            ages 4-8, these sneakers offer a comfortable fit, easy velcro closures, and a durable,
+                            slip-resistant sole. Whether they're running around the playground or heading to school,
+                            these shoes provide the perfect balance of style and functionality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------overview------------------------------->
+    <div id="benifits">
+        <div class="container">
+            <div class="row">
+                <div class="benifits-col-5">
+                    <h3><b>Why we are <span>Unique?</span></b></h3>
+                    <br>
+                    <p>At SHOEX, we take pride in our commitment to delivering a shopping experience that goes beyond
+                        the ordinary.
+                        We curate a diverse and extensive collection of shoes that caters to every style, occasion, and
+                        budget.
+                        We believe in quality over quantity. And Our cutting-edge AI-powered recommendation system
+                        understands your preferences
+                        and helps you discover shoes that match your style. and most importantly We offer swift and
+                        secure delivery options,
+                        so you can get your new shoes quickly and safely, no matter where you are. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------contact--------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-6">
+                    <img src="contact1.png">
+                </div>
+                <div class="contact-col-7">
+                    <h3><b>CONTACT <span> US</span></b></h3>
+                    <br>
+                    <p>To make an order or just to know more contact us:
+                        <br>
+                        ✉ shoex@gmail.com
+                    </p>
+                    <form id="form">
+                        <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                        <input type="submit" class="btn" id="submit" value="Know More">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

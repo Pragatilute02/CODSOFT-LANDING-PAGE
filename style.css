@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(background2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 10% 0;
+}
+
+.heading{
+  text-align: left;
+  font-size: xx-large;
+  padding-bottom: 0px;
+}
+.head{
+  color: white;
+  padding-top: 0px;
+  margin: 0px;
+  font-size: small;
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.home-col-1 {
+  flex-basis: 35%;
+}
+
+.home-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.home-col-2 {
+  margin-top: 5px;
+  padding: 90px 10% 0;
+  font-size: 20px;
+}
+
+.home-col-2 h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff004f;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-color: #ff004f;
+}
+
+/*------------------------about----------------------*/
+.extra {
+  color: #ff004f;
+}
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.about_image {
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-3 {
+  flex-basis: 35%;
+}
+
+.about-col-3 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-4 {
+  flex-basis: 60%;
+  font-size: 30px;
+}
+
+.sub-title-1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+
+.About {
+  font-size: large;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+/*-----------------------service--------------------*/
+.container h1 {
+  text-align: center;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.section {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.section:hover img {
+  transform: scale(1.1);
+}
+
+.section:hover .layer {
+  height: 100%;
+}
+
+/*--------------------------overview----------------------*/
+#benifits {
+  color: #ababab;
+  text-align: center;
+}
+
+.benifits-col-5 {
+  margin-top: 5px;
+  padding: 90px 10% 0;
+  font-size: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.benifits-col-5 h3 {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
+}
+.benifits-col-5 h3 span{
+  color: #ff004f;
+  background-color: transparent;
+}
+
+/*-------------------------contact------------------------*/
+.contact {
+  text-align: center;
+  font-size: large;
+}
+
+.contact-col-6 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.contact--col-7 {
+  flex-basis: 35%;
+}
+
+.contact-col-7 h3 {
+  margin-top: 30px;
+}
+.contact-col-7 h3 span{
+  color: #ff004f;
+  background-color: transparent;
+}
+
+.contact-col-7 p {
+  margin-top: 10px;
+}
+
+#form {
+  padding: 10px 0;
+  color: #ababab;
+}
+
+#email {
+  padding: 10px;
+  border-radius: 3px;
+}
+
+/*---------------------css for small screens---------------------*/
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(phone-background1.png);
+  }
+
+  .home-col-2 {
+    margin-top: 20%;
+    font-size: 15px;
+  }
+
+  .home-col-2 h1 {
+    font-size: 30px;
+  }
+
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title-1 {
+    font-size: 40px;
+  }
+
+  .about-col-3,
+  .about-col-4 {
+    flex-basis: 100%;
+  }
+
+  .about-col-3 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-4 {
+    font-size: 14px;
+  }
+
+  .contact-col-6 {
+    margin-bottom: 30px;
+  }
+
+  .contact-col-7 {
+    flex-basis: 100%;
+  }
+}
